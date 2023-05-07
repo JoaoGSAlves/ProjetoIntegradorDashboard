@@ -1,7 +1,8 @@
 <div class="card">
 	<div class="col-12 md:col-4 user">
 		<p-avatar
-			icon="pi pi-user"
+			id="userIcon"
+			image="{{'data:image/png;base64,' + usuario.foto}}"
 			styleClass="mr-2"
 			size="large"
 			[style]="{
@@ -11,6 +12,8 @@
 				height: '150px'
 			}"
 			shape="circle"></p-avatar>
-		<h1>Maria das Coves Silva</h1>
+		<h1>{{usuario.nomeCompleto}}</h1>
 	</div>
 </div>
+
+

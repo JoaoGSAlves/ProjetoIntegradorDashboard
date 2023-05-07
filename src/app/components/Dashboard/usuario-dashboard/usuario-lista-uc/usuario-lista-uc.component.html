@@ -11,7 +11,7 @@
       currentPageReportTemplate="Apresentando {first} para {last} de {totalRecords} registros"
     >
       <ng-template pTemplate="header">
-        <tr>
+        <tr style="font-size: 20px">
           <th style="min-width: 15rem">
             <div class="flex justify-content-center align-items-center">
               Modulo
@@ -75,7 +75,7 @@
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-grupo>
-        <tr>
+        <tr style="font-size: 20px">
           <td>
             {{ grupo.unidadeCurricular.modulo.descricao }}
           </td>
@@ -116,7 +116,7 @@
             ></i>
           </td>
           <td>
-            <button
+            <button 
               mat-mini-fab
               color="primary"
               [routerLink]="['/unidadeCurricular/encontros/', grupo.id]"
