@@ -1,6 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { AuthGuardService } from 'src/app/services/auth-guard.service';
 import { navbarData } from './nav-data';
+
 import {
 	animate,
 	keyframes,

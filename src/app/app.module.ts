@@ -141,6 +141,7 @@ import { ProximasAtividadesComponent } from './components/Dashboard/usuario-dash
 import { ArquivosPrivadosComponent } from './components/Dashboard/usuario-dashboard/arquivos-privados/arquivos-privados.component';
 import { UltimosBadgesComponent } from './components/Dashboard/usuario-dashboard/ultimos-badges/ultimos-badges.component';
 import { DadosUsuarioComponent } from './components/Dashboard/usuario-dashboard/dados-usuario/dados-usuario.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 registerLocaleData(localePT);
 registerLocaleData(localeES);
@@ -251,6 +252,7 @@ registerLocaleData(localeFR);
 		KnobModule,
 		SplitterModule,
 		AvatarModule,
+  FontAwesomeModule,
 	],
 	providers: [
 		CursosService,
