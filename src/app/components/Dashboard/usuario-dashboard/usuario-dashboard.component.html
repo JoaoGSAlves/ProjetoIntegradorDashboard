@@ -5,26 +5,30 @@
 				<span>Inicio</span>
 			</ng-template>
 			<div
-				class="linhaZero"
+				class="col-12 col-md-8 col-sg-4 linhaZero"
 				style="
 					display: flex;
 					flex-direction: row;
 					padding: 25px 25px;
 					justify-content: space-between;
+					width: 100%;
 				">
 				<app-dados-usuario></app-dados-usuario>
 				<app-ultimos-badges></app-ultimos-badges>
 			</div>
-			<div
-				class="linhaUm"
-				style="
-					display: flex;
-					justify-content: space-between;
-					padding: 25px 25px;
-				">
-				<app-usuario-calendario-academico></app-usuario-calendario-academico>
-				<app-proximas-atividades></app-proximas-atividades>
-				<app-arquivos-privados></app-arquivos-privados>
+			<div class="container-fill linhaUm">
+				<div class="row" style="padding: 20px">
+					<app-usuario-calendario-academico
+						class="col-3"></app-usuario-calendario-academico>
+					<app-proximas-atividades
+						class="col-6"
+						style="
+							display: flex;
+							align-items: center;
+							flex-direction: column;
+						"></app-proximas-atividades>
+					<app-arquivos-privados class="col-3"></app-arquivos-privados>
+				</div>
 			</div>
 			<p>Lista de unidades curriculares matriculadas no semestre.</p>
 			<app-usuario-lista-uc></app-usuario-lista-uc>

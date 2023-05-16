@@ -1,10 +1,16 @@
-<div class="card">
-	<div class="card__container" >
-		<h1 class="card__header">Últimos 3 badges</h1>
-		<div class="card__body">
-			<img  style="width: 3rem" src="{{'data:image/png;base64,' + badges[2].imagem}}"/>
-			<img  style="width: 3rem" src="{{'data:image/png;base64,' + badges[0].imagem}}"/>
-			<img  style="width: 3rem" src="{{'data:image/png;base64,' + badges[1].imagem}}"/>
+<div class="card__container col-4 col-md-2 col-sm-1">
+	<div class="container">
+		<h1 class="card__text">Últimos 3 badges</h1>
+		<div class="badges__icons">
+			<img
+				style="width: 3rem"
+				src="{{ 'data:image/png;base64,' + badges[2].imagem }}" />
+			<img
+				style="width: 3rem"
+				src="{{ 'data:image/png;base64,' + badges[0].imagem }}" />
+			<img
+				style="width: 3rem"
+				src="{{ 'data:image/png;base64,' + badges[1].imagem }}" />
 		</div>
 	</div>
 </div>

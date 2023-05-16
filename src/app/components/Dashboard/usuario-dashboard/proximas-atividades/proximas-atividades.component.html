@@ -9,24 +9,31 @@
 </p>
 <div class="card">
 	<div class="atividade">
-		<h2 class="header">{{atividades[0].dataFim | date:"dd/MM/yyyy":"+0000"}}</h2>
+		<h2 class="header">
+			{{ atividades[0].dataFim | date : 'dd/MM/yyyy' : '+0000' }}
+		</h2>
 		<div class="bloco__atividade">
 			<i class="pi pi-pencil" style="font-size: 2rem"></i>
 			<div class="sub__header">
-				<div class="texto1" style="font-weight: 500;">{{atividades[0].descricao}}</div>
+				<div class="texto1" style="font-weight: 500">
+					{{ atividades[0].descricao }}
+				</div>
 				<p>Introdução à Programação</p>
 			</div>
 		</div>
 	</div>
 	<div class="atividade">
-		<h2 class="header">{{atividades[1].dataFim | date:"dd/MM/yyyy":"+0000"}}</h2>
+		<h2 class="header">
+			{{ atividades[1].dataFim | date : 'dd/MM/yyyy' : '+0000' }}
+		</h2>
 		<div class="bloco__atividade">
 			<i class="pi pi-pencil" style="font-size: 2rem"></i>
 			<div class="sub__header">
-				<div class="texto1" style="font-weight: 500;">{{atividades[1].descricao}}</div>
+				<div class="texto1" style="font-weight: 500">
+					{{ atividades[1].descricao }}
+				</div>
 				<p>Introdução à Programação</p>
 			</div>
 		</div>
 	</div>
 </div>
-
